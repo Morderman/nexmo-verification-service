@@ -26,6 +26,9 @@ class NexmoVerificationProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__ . '/config/verification.php' => config_path('verification.php'),
+        ]);
         $this->app['router']->post('verification/request','App\Library\Services\NexmoVerification@request');
         $this->app['router']->post('verification/verify','App\Library\Services\NexmoVerification@verify');
     }
