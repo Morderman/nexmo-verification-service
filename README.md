@@ -16,7 +16,7 @@ Run `composer update` in your terminal to install it.
 
 OR
 
-Run `composer require slyusarchyn/laravel-service-creator`
+Run `composer require Morderman/nexmo-verification-service`
 
 Install Nexmo client package.
 
